@@ -25,4 +25,13 @@ public class WatchList {
             System.out.println(map);
         }
     }
+
+    public void StreamStore(Streaming streaming){
+
+        HashMap<Integer , Streaming > mp = new HashMap<>();
+
+        for(int i = 0 ; i< streaming.hashCode() ; i++){
+            mp.put(i , streaming);
+        }
+    }
 }
